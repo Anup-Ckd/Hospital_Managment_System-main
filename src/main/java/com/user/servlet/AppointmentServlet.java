@@ -51,7 +51,7 @@ public class AppointmentServlet extends HttpServlet{
 		
 		if(admit && dao.getAvailbleBeds() < 1) {
 			session.setAttribute("errorMsg", "Bed Unavailable");
-			resp.sendRedirect("user_appointment.jsp");
+			resp.sendRedirect("view_appointment.jsp");
 		}
 		
 		else if(dao.addAppointment(ap)) {
@@ -60,7 +60,7 @@ public class AppointmentServlet extends HttpServlet{
 	                int availableBeds = dao.getAvailbleBeds();
 	                session.setAttribute("availableBeds", availableBeds);
 	            }
-			resp.sendRedirect("user_appointment.jsp");
+			resp.sendRedirect("view_appointment.jsp");
 			
 		}else {
 			session.setAttribute("errorMsg", "Something wrong on server");

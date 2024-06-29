@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="index.jsp"><i
-			class="fas fa-clinic-medical"></i>Dev Care</a>
+			class="fas fa-clinic-medical"></i>EKA Care</a>
 
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarSupportedContent"
